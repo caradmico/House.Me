@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="2RowModel" type="com.carasapplication.app.modules.landlorddashboard.data.model.2RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearCard"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylecornerRadius">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearImage"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleblack_900_0c">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtTitleNine"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_73pxv"
+                android:layout_marginEnd="@dimen/_52pxh"
+                android:layout_marginStart="@dimen/_52pxh"
+                android:layout_marginTop="@dimen/_75pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{2RowModel.txtTitleNine}"
+                style="@style/txtRobotoregular12" tools:text="@string/lbl_apartment"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtTitleOne"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_58pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@{2RowModel.txtTitleOne}"
+            style="@style/txtRobotoregular12" tools:text="@string/msg_southside_heigh"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtPrice"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@{2RowModel.txtPrice}"
+            style="@style/txtRobotomedium16" tools:text="@string/msg_2_bedrooms_12"/>
+    </LinearLayout>
+</layout>

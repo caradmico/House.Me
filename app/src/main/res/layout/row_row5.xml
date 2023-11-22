@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="5RowModel" type="com.carasapplication.app.modules.renterdashboard.data.model.5RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearCard"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylecornerRadius">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearImage"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleblack_900_0c">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtImageCounterTwo"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_73pxv"
+                android:layout_marginEnd="@dimen/_60pxh"
+                android:layout_marginStart="@dimen/_60pxh"
+                android:layout_marginTop="@dimen/_75pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{5RowModel.txtImageCounterTwo}"
+                style="@style/txtRobotoregular12" tools:text="@string/lbl_image_3"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtProductCounterTwo"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@{5RowModel.txtProductCounterTwo}"
+            style="@style/txtRobotoregular12" tools:text="@string/lbl_product_3"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtDataCounterTwo"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@{5RowModel.txtDataCounterTwo}"
+            style="@style/txtRobotomedium16" tools:text="@string/lbl_data_3"/>
+    </LinearLayout>
+</layout>

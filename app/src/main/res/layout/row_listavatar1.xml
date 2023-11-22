@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listavatar1RowModel" type="com.carasapplication.app.modules.map.data.model.Listavatar1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearCard"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_900_0ccornerRadius">
+        <LinearLayout android:id="@+id/linearUser"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/linearRowavatar"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.53" android:layout_width="0dp" android:orientation="horizontal">
+                <View
+                    android:background="@drawable/rectangle_bg_black_900_19_radius_12"
+                    android:id="@+id/viewAvatar"
+                    android:layout_height="@dimen/_24pxh" android:layout_width="@dimen/_24pxh"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtUserCounter"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_weight="0.58"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:singleLine="true"
+                    android:text="@{listavatar1RowModel.txtUserCounter}"
+                    style="@style/txtRobotomedium12" tools:text="@string/lbl_user_1"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageTicket"
+                android:layout_height="@dimen/_9pxh"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:layout_marginStart="@dimen/_188pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="@dimen/_58pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_ticket"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_ticket"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtReviewCounter"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@{listavatar1RowModel.txtReviewCounter}"
+            style="@style/txtRobotoregular14" tools:text="@string/lbl_review_1"/>
+    </LinearLayout>
+</layout>
