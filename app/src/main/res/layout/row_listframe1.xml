@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listframe1RowModel" type="com.carasapplication.app.modules.admindashboard.data.model.Listframe1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowframe"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end" android:id="@+id/txtFrame"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_weight="0.1" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:paddingBottom="@dimen/_3pxv"
+            android:paddingStart="@dimen/_4pxh"
+            android:paddingTop="@dimen/_4pxv" android:singleLine="true"
+            android:text="@{listframe1RowModel.txtFrame}"
+            style="@style/txtSolidRounded_1" tools:text="@string/lbl4"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumntitle"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_weight="0.67" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTitleThree"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{listframe1RowModel.txtTitleThree}"
+                style="@style/txtRobotoregular14" tools:text="@string/lbl_john_doe"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtEmail"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{listframe1RowModel.txtEmail}"
+                style="@style/txtRobotoregular12_1" tools:text="@string/msg_johndoe_gmail_c"/>
+        </LinearLayout>
+        <TextView android:id="@+id/txtSubtitle"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_weight="0.23" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_6pxh"
+            android:text="@{listframe1RowModel.txtSubtitle}"
+            style="@style/txtRobotomedium14" tools:text="@string/msg_joined_2021_01"/>
+    </LinearLayout>
+</layout>

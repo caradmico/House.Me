@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.carasapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.carasapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.carasapplication.app.modules.map.ui.MapActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.carasapplication.app.modules.renterdashboard.ui.RenterDashboardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.carasapplication.app.modules.chat.ui.ChatActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.carasapplication.app.modules.landlorddashboard.ui.LandlordDashboardActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.carasapplication.app.modules.rentallistings.ui.RentalListingsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.carasapplication.app.modules.admindashboard.ui.AdminDashboardActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

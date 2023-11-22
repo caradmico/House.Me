@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="3RowModel" type="com.carasapplication.app.modules.landlorddashboard.data.model.3RowModel"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearCard"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStyleblack_900_0ccornerRadius">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearAvatar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="wrap_content" android:orientation="horizontal">
+            <View
+                android:background="@drawable/rectangle_bg_black_900_19_radius_12"
+                android:id="@+id/viewAvatar"
+                android:layout_height="@dimen/_24pxh" android:layout_width="@dimen/_24pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTitleTwelve"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_weight="0.68" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{3RowModel.txtTitleTwelve}"
+                style="@style/txtRobotomedium12" tools:text="@string/lbl_john_doe"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtTitleOneTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_52pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@{3RowModel.txtTitleOneTwo}"
+            style="@style/txtRobotoregular14" tools:text="@string/msg_excellent_credi"/>
+    </LinearLayout>
+</layout>
